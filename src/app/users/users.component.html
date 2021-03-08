@@ -1,0 +1,4 @@
+<div *ngFor="let user of users" class="user-style">
+    {{ user.username }} - {{ user.email }}
+    <button (click)="userDetail(user.id)">Ver detalle</button>
+</div>

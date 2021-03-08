@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "constructoras"
+    }
+  },
+  "defaultProject": "constructoras",
+  "cli": {
+    "analytics": false
+  }
 }
