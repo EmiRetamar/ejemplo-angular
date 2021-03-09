@@ -1,0 +1,3 @@
+{{ user.id }} - {{ user.username }} - {{ user.email }}
+<!-- <button [routerLink]="['/constructoras', user.id]">Ver detalle</button> -->
+<button (click)="userDetail(user.id)">Ver detalle</button>
