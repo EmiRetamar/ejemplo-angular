@@ -1,23 +1,23 @@
 export interface User {
-    id: number;
-    name: string;
-    username: string;
-    email: string;
-    address: {
-        street: string;
-        suite: string;
-        city: string;
-        zipcode: string;
-        geo: {
-        lat: string;
-        lng: string;
+    Id: number;
+    Name: string;
+    Username: string;
+    Email: string;
+    Address: {
+        Street: string;
+        Suite: string;
+        City: string;
+        Zipcode: string;
+        Geo: {
+        Lat: string;
+        Lng: string;
         }
     };
-    phone: string;
-    website: string;
-    company: {
-        name: string;
-        catchPhrase: string;
-        bs: string;
+    Phone: string;
+    Website: string;
+    Company: {
+        Name: string;
+        CatchPhrase: string;
+        Bs: string;
     }
 }
