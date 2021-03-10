@@ -9,19 +9,20 @@ import { User } from '../models/user.model';
 })
 export class UsersService {
 
-  private apiUrl = 'https://jsonplaceholder.typicode.com/users';
+  // private apiUrl = 'https://jsonplaceholder.typicode.com/users';
+  private apiUrl = 'http://localhost:5010/api/1/centroDeCostoConstructoras';
 
   constructor(private http: HttpClient) { }
 
-  public getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(this.apiUrl)
+  public getUsers(token: string): Observable<User[]> {
+    return this.http.get<User[]>(`${this.apiUrl}?access_token=${token}`)
     // .pipe(
     //   map(users => users[0])
     // );
   }
 
-  public getUser(userId: number): Observable<User> {
-    return this.http.get<User>(`${this.apiUrl}/${userId}`);
+  public getUser(userId: number, token: string): Observable<User> {
+    return this.http.get<User>(`${this.apiUrl}/${userId}?access_token=${token}`);
   }
 
 }

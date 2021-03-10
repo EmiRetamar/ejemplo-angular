@@ -13,7 +13,7 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
     AppComponent,
     UsersComponent,
     UserComponent,
-    UserDetailComponent
+    UserDetailComponent,
   ],
   imports: [
     BrowserModule,
